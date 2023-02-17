@@ -1,0 +1,127 @@
+//覆盖element-ui styles
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+  width: 438px;
+  // padding: 40px;
+  border-radius: 10px 10px 0 0 !important;
+  .el-dialog__header {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    background: #F2F3F5;
+    border-radius: 10px 10px 0 0 !important;
+  }
+  .el-dialog__title {
+    font-size: 16px;
+    color: #333333;
+    font-family: 'PingFang SC';
+  }
+  .el-dialog__headerbtn {
+    top: 10px
+  }
+  .el-dialog__body {
+    padding: 20px 30px 0 !important;
+    .el-input__inner {
+      height: 36px !important;
+      line-height: 36px !important;
+    }
+    .el-form-item__label {
+      font-weight: 400 !important;
+    }
+  }
+  .el-form-item__content {
+    line-height: 36px !important;
+  }
+  .el-dialog__footer {
+    padding: 0 30px 30px 30px !important;
+  }
+  
+  
+  .dialog-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    .dialog-cancel {
+      width: 100px;
+      height: 30px;
+      line-height: 30px;
+      background-color: #F2F3F5;
+      color: #333333;
+      font-size: 14px;
+      text-align: center;
+      margin-right: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .dialog-submit {
+      width: 100px;
+      height: 30px;
+      line-height: 30px;
+      background-color: #F2F3F5;
+      background: #026DFF;
+      color: #ffffff;
+      font-size: 14px;
+      text-align: center;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
+
+//遮罩层样式重置
+.el-loading-mask.is-fullscreen {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+
+//不可编辑样式重置
+.el-input.is-disabled .el-input__inner,
+.el-textarea.is-disabled .el-textarea__inner {
+  background-color: #f6f6f6 !important;
+  border-color: #e6ebf5 !important;
+  color: #666 !important;
+}
+
+//table固定列最后一行显示不正常，最后一行横向只显示一部分问题
+.el-table__fixed,.el-table__fixed-right{
+  height: 100%!important;
+}
